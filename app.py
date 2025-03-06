@@ -27,7 +27,7 @@ if conversion_choice == "Length":
 
     #logic
 
-    if st.button("Convert"):
+    if st.button("Convert Length"):
         result = input_value * (length_conversion[from_unit]/length_conversion[to_unit])
         st.success(f"{input_value} {from_unit} is equal to {result} {to_unit}") 
 
@@ -48,7 +48,7 @@ elif conversion_choice == "Weight":
     }
 
     #logic
-    if st.button("Convert"):
+    if st.button("Convert Weight"):
         result = input_value * (weight_conversion[from_unit]/weight_conversion[to_unit])
         st.success(f"{input_value} {from_unit} is equal to {result} {to_unit}") 
 
@@ -77,7 +77,7 @@ elif conversion_choice == "Temprature":
             return value
     
 
-if st.button("Convert"):
+if st.button("Convert Temprature"):
     result = convert_temprature(input_value,from_unit,to_unit)
     st.success(f"{input_value} {from_unit} is equal to {result} {to_unit}")
 
