@@ -75,8 +75,10 @@ elif conversion_choice == "Temprature":
             return (value - 273.15) * 9/5 + 32
         else:
             return value
-        
-    if st.button("Convert"):
-        result = convert_temprature(input_value,from_unit,to_unit)
-        st.success(f"{input_value} {from_unit} is equal to {result} {to_unit}")
+    
+
+if st.button("Convert"):
+    result = convert_temprature(input_value,from_unit,to_unit)
+    st.success(f"{input_value} {from_unit} is equal to {result} {to_unit}")
+
 
